@@ -103,16 +103,53 @@
 </table>
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-    <tr>
+    
+  <tr>
+		<td width="33%" valign="top" align="center"><a href="pubs/Jain22.pdf" target="_blank"><img src="images/Jain22.PNG" alt="VSG" width="100%" style="border-radius:1px"></a></td>
+		<td width="67%" valign="top">
+			<p>
+        <a href="pubs/Jain22.pdf" target="_blank" id="VSG">
+				<heading>Learning Robust Dynamics through Variational Sparse Gating</heading></a><br>
+				<strong>Arnav Kumar Jain</strong>, <a href="https://shivakanthsujit.github.io/" target="_blank">Shivakanth Sujit</a>, <a href="https://shrutij01.github.io/" target="_blank">Shruti Joshi</a>, <a href="http://www-ens.iro.umontreal.ca/~michals/" target="_blank">Vincent Michalski</a>, <a href="https://danijar.com/">Danijar Hafner</a> and <a href="https://saebrahimi.github.io/" target="_blank">Samira-Ebrahimi Kahou</a><br>
+			</p>	
+        Neural Information Processing Systems (<b>NeurIPS</b>), 2022 <br>
+        DeepRL Workshop @ NeurIPS, 2021<br>
+			<!-- </p> -->
+			<div class="paper" id="Jain22">
+				<a href="javascript:toggleblock('Jain22abs')">abstract</a> /
+				<a shape="rect" href="javascript:togglebib('Jain22')" class="togglebib">bibtex</a> /
+				<a href="pubs/Jain22.pdf" target="_blank">pdf</a> /
+				<a href="https://github.com/arnavkj1995/VSG" target="_blank">code</a>
+				<br>
+				<p align="justify" > <i id="Jain22abs"> Learning world models from their sensory inputs enables agents to plan for actions by imagining their future outcomes. World models have previously been shown to improve sample-efficiency in simulated environments with few objects, but have not yet been applied successfully to environments with many objects. In environments with many objects, often only a small number of them are moving or interacting at the same time. In this paper, we investigate integrating this inductive bias of sparse interactions into the latent dynamics of world models trained from pixels. First, we introduce Variational Sparse Gating (VSG), a latent dynamics model that updates its feature dimensions sparsely through stochastic binary gates. Moreover, we propose a simplified architecture Simple Variational Sparse Gating (SVSG) that removes the deterministic pathway of previous models, resulting in a fully stochastic transition function that leverages the VSG mechanism. We evaluate the two model architectures in the BringBackShapes (BBS) environment that features a large number of moving objects and partial observability, demonstrating clear improvements over prior models. </i></p>
+        
+        <pre xml:space="preserve">
+          @InProceedings{Jain22,
+            author    = "Jain, A.~K. and Sujit, S. and 
+                        Joshi, S. and Michalski, V. 
+                        and Hafner, D. and Kahou, S.~E.",
+            title     = "Learning Robust Dynamics through 
+                          Variational Sparse Gating",
+            booktitle = {Advances in 
+              Neural Information Processing Systems},
+            month     = {December},
+            year      = {2022}
+          }
+        </pre>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
 		<td width="33%" valign="top" align="center"><a href="pubs/Saini21.pdf" target="_blank"><img src="images/Saini21.jpg" alt="GalaXC" width="100%" style="border-radius:1px"></a></td>
 		<td width="67%" valign="top">
 			<p>
         <a href="pubs/Saini21.pdf" target="_blank" id="GalaXC">
 				<heading>GalaXC: Graph Neural Networks with Labelwise Attention for Extreme Classification</heading></a><br>
 				<a href="http://deepaksaini119.github.io/" target="_blank">Deepak Saini</a>*, <strong>Arnav Kumar Jain</strong>*, Kushal Dave*, Jian Jiao, Amit Singh, Ruofei Zhang and <a href="http://manikvarma.org" target="_blank">Manik Varma</a><br>
-				The Web Conference (<b>TheWebConf</b>), 2021<br>
 			</p>
-			<!-- Long Oral presentation<br> -->
+      	
+      The Web Conference (<b>TheWebConf</b>), 2021<br>			
 			<div class="paper" id="Saini21">
 				<a href="javascript:toggleblock('Saini21abs')">abstract</a> /
 				<a shape="rect" href="javascript:togglebib('Saini21')" class="togglebib">bibtex</a> /
@@ -122,20 +159,22 @@
 				<p align="justify" > <i id="Saini21abs">This paper develops the GalaXC algorithm for Extreme Classification, where the task is to annotate a document with the most relevant subset of labels from an extremely large label set. Extreme classification has been successfully applied to several real world web-scale applications such as web search, product recommendation, query rewriting, etc. GalaXC identifies two critical deficiencies in leading extreme classification algorithms. First, existing approaches generally assume that documents and labels reside in disjoint sets, even though in several applications, labels and documents cohabit the same space. Second, several approaches, albeit scalable, do not utilize various forms of metadata offered by applications, such as label text and label correlations. To remedy these, GalaXC presents a framework that enables collaborative learning over joint document-label graphs at massive scales, in a way that naturally allows various auxiliary sources of information, including label metadata, to be incorporated. GalaXC also introduces a novel label-wise attention mechanism to meld high-capacity extreme classifiers with its framework. An efficient end-to-end implementation of GalaXC is presented that could be trained on a dataset with 50M labels and 97M training documents in less than 100 hours on 4xV100 GPUs. This allowed GalaXC to not only scale to applications with several millions of labels, but also be up to 18% more accurate than leading deep extreme classifiers, while being upto 2-50x faster to train and 10x faster to predict on benchmark datasets. GalaXC is particularly well-suited to warm-start scenarios where predictions need to be made on data points with partially revealed label sets, and was found to be up to 25% more accurate than extreme classification algorithms specifically designed for warm start settings. In A/B tests conducted on the Bing search engine, GalaXC could improve the Click Yield (CY) and coverage by 1.52% and 1.11% respectively. Code for GalaXC is available at <a href="https://github.com/Extreme-classification/GalaXC">https://github.com/Extreme-classification/GalaXC</a>.</i></p>
 
         <pre xml:space="preserve">
-@InProceedings{Saini21,
-  author    = "Saini, D. and Jain, A.~K. and Dave, K. and
-    Jiao, J. and Singh, A. and Zhang, R. and Varma, M.",
-  title     = "GalaXC: Graph neural networks with 
-    labelwise attention for extreme classification",
-  booktitle = "Proceedings of The ACM International 
-    World Wide Web Conference",
-  month     = "April",
-  year      = "2021",
-}
+              @InProceedings{Saini21,
+                author    = "Saini, D. and Jain, A.~K. and Dave, K. 
+                            and Jiao, J. and Singh, A. and Zhang, R.
+                            and Varma, M.",
+                title     = "GalaXC: Graph neural networks with 
+                  labelwise attention for extreme classification",
+                booktitle = "Proceedings of The ACM International 
+                  World Wide Web Conference",
+                month     = "April",
+                year      = "2021",
+              }
           </pre>
 	      </div>
      	</td>
   	</tr>
+
     <tr>
     <td width="33%" valign="top" align="center"><a href="pubs/Lahiri20.pdf" target="_blank"><img src="images/Lahiri20.gif" alt="PriorGAN" width="100%" style="border-radius:1px"></a></td>
     <td width="67%" valign="top">
@@ -143,8 +182,9 @@
         <a href="pubs/Lahiri20.pdf" target="_blank" id="PriorGAN">
         <heading>Prior Guided GAN Based Semantic Inpainting</heading></a><br>
         <a href="https://sites.google.com/site/aviseklahiri/home" target="_blank">Avisek Lahiri*</a>, <strong>Arnav Kumar Jain</strong>*, Sanskar Agrawal, <a href="https://cse.iitkgp.ac.in/~pabitra/" target="_blank">Pabitra Mitra</a>, and <a href="http://www.iitkgp.ac.in/department/EC/faculty/ec-pkb" target="_blank">Prabir Kumar Biswas</a> <br>
-        Computer Vision and Patten Recognition (<b>CVPR</b>), 2020<br>
       </p>
+      
+      Vision and Patten Recognition (<b>CVPR</b>), 2020<br>
       <!-- Long Oral presentation<br> -->
       <div class="paper" id="lahiri2020prior">
         <a href="javascript:toggleblock('Lahiri20abs')">abstract</a> /
@@ -174,8 +214,9 @@
         <a href="pubs/Lahiri19.pdf" target="_blank" id="SemanicGAN">
         <heading>Faster unsupervised semantic inpainting: A GAN based approach</heading></a><br>
         <a href="https://sites.google.com/site/aviseklahiri/home" target="_blank">Avisek Lahiri*</a>, <strong>Arnav Kumar Jain</strong>*, Divyasri Nadendla, and <a href="http://www.iitkgp.ac.in/department/EC/faculty/ec-pkb" target="_blank">Prabir Kumar Biswas</a> <br>
-        Computer Vision and Patten Recognition (<b>ICIP</b>), 2019 <br>
-      </p>
+      </p>  
+      Computer Vision and Patten Recognition (<b>ICIP</b>), 2019 <br>
+      <!-- </p> -->
       <!-- Long Oral presentation<br> -->
       <div class="paper" id="lahiri2019prior">
         <a href="javascript:toggleblock('Lahiri19abs')">abstract</a> /
@@ -207,8 +248,10 @@
         <a href="pubs/Agarwalla18.pdf" target="_blank" id="KRSSG">
         <heading>Bayesian Optimisation with Prior Reuse for Motion Planning in Robot Soccer</heading></a><br>
         <a href="https://abhinavagarwalla.github.io/" target="_blank">Abhinav Agarwalla*</a>, <strong>Arnav Kumar Jain</strong>*, <a href="https://kvmanohar22.github.io/" target="_blank">KV Manohar</a>, Arpit Tarang Saxena, and <a href="http://www.facweb.iitkgp.ac.in/~jay/" target="_blank">Jayanta Mukhopadhyay</a> <br>
-        Conference on Data Science and Management of Data (<b>CoDS-COMAD</b>), 2018 <br>
-      </p>
+      </p> 
+      
+      Conference on Data Science and Management of Data (<b>CoDS-COMAD</b>), 2018 <br>
+      <!-- </p> -->
       <!-- Long Oral presentation<br> -->
       <div class="paper" id="agarwalla2018bayesian">
         <a href="javascript:toggleblock('Agarwalla18abs')">abstract</a> /
@@ -242,8 +285,10 @@
         <a href="pubs/Jain17.pdf" target="_blank" id="RecurrentMemory">
         <heading>Recurrent Memory Addressing for describing videos</heading></a><br>
         <strong>Arnav Kumar Jain</strong>*, <a href="https://abhinavagarwalla.github.io/" target="_blank">Abhinav Agarwalla*</a>, <a href="https://people.eecs.berkeley.edu/~krishna/" target="_blank">Kumar Krishna Agrawal*</a>, and <a href="https://cse.iitkgp.ac.in/~pabitra/" target="_blank">Pabitra Mitra</a> <br>
-        Deep Vision Workshop at Computer Vision and Pattern Recognition (<b>CVPRW</b>), 2017 <br>
-      </p>
+      </p> 
+      
+      Deep Vision Workshop at Computer Vision and Pattern Recognition (<b>CVPRW</b>), 2017 <br>
+      <!-- </p> -->
       <!-- Long Oral presentation<br> -->
       <div class="paper" id="jain2017recurrent">
         <a href="javascript:toggleblock('Jain17abs')">abstract</a> /
@@ -278,6 +323,9 @@
 
 <script xml:space="preserve" language="JavaScript">
 hideallbibs();
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('Jain22abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('Saini21abs');

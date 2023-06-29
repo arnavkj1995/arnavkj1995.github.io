@@ -103,7 +103,38 @@
 </table>
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-    
+  <tr>
+		<td width="33%" valign="top" align="center"><a href="pubs/Jain23.pdf" target="_blank"><img src="images/Jain23.png" alt="EPL" width="100%" style="border-radius:1px"></a></td>
+		<td width="67%" valign="top">
+			<p>
+        <a href="pubs/Jain23.pdf" target="_blank" id="EPL">
+				<heading>Maximum State Entropy Exploration using Predecessor and Successor Representations </heading></a><br>
+				<strong>Arnav Kumar Jain</strong>, <a href="https://lucaslehnert.github.io/" target="_blank">Lucas Lehnert</a>, <a href="https://irina-rish.com/" target="_blank">Irina Rish</a>, <a href="https://neo-x.github.io/" target="_blank">Glen Berseth</a><br>
+			</p>	
+        Frontiers4LCD Workshop @ ICML, 2023<br>
+			<!-- </p> -->
+			<div class="paper" id="Jain23">
+				<a href="javascript:toggleblock('Jain23abs')">abstract</a> /
+				<a shape="rect" href="javascript:togglebib('Jain23')" class="togglebib">bibtex</a> /
+				<a href="pubs/Jain23.pdf" target="_blank">pdf</a> /
+				<a href="https://github.com/arnavkj1995/EPL" target="_blank">code</a>
+				<br>
+				<p align="justify" > <i id="Jain23abs"> Animals have a developed ability to explore that aids them in important tasks such as locating food, exploring for shelter, and finding misplaced items. These exploration skills necessarily track where they have been so that they can plan for finding items with relative efficiency. Contemporary exploration algorithms often learn a less efficient exploration strategy because they either condition only on the current state or simply rely on making random open-loop exploratory moves. In this work, we propose ηψ-Learning, a method to learn efficient exploratory policies by conditioning on past episodic experience to make the next exploratory move. Specifically, ηψ-Learning learns an exploration policy that maximizes the entropy of the state visitation distribution of a single trajectory. Furthermore, we demonstrate how variants of the predecessor representation and successor representations can be combined to predict the state visitation entropy. Our experiments demonstrate the efficacy of ηψ-Learning to strategically explore the environment and maximize the state coverage with limited samples. </i></p>
+        
+        <pre xml:space="preserve">
+          @article{Jain23,
+            author    = "Jain, A.~K. and Lehnert, L. and 
+                        Rish, I. and Berseth, G.",
+            title     = "Maximum State Entropy Exploration using Predecessor 
+                      and Successor Representations",
+            journal   = {arXiv preprint arXiv:2306.14808},
+            year      = {2023}
+          }
+        </pre>
+      </div>
+    </td>
+  </tr>
+  
   <tr>
 		<td width="33%" valign="top" align="center"><a href="pubs/Jain22.pdf" target="_blank"><img src="images/Jain22.png" alt="VSG" width="100%" style="border-radius:1px"></a></td>
 		<td width="67%" valign="top">
@@ -323,6 +354,9 @@
 
 <script xml:space="preserve" language="JavaScript">
 hideallbibs();
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('Jain23abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('Jain22abs');

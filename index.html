@@ -89,9 +89,8 @@
 		</td>
 
 		<td width="68%" valign="top" align="justify" id="Bio">
-			I am a Ph.D. student at <a href="https://www.umontreal.ca/" target="_blank">Université de Montréal</a> and <a href="https://mila.quebec/" target="_blank">Mila</a> advised by <a href="https://mila.quebec/en/person/irina-rish/" target="_blank">Prof. Irina Rish</a>. 
+			I am a Ph.D. student at <a href="https://www.umontreal.ca/" target="_blank">Université de Montréal</a> and <a href="https://mila.quebec/" target="_blank">Mila</a> advised by <a href="https://mila.quebec/en/person/irina-rish/" target="_blank">Prof. Irina Rish</a>, and closely collaborating with <a href="https://sanjibanc.github.io/" target="_blank">Sanjiban Choudhury</a>. 
       I am interested in developing efficient decision-making agents, with my work focusing on imitation from few demonstrations and exploration with limited interactions.
-      <!-- I closely collaborating with <a href="https://sanjibanc.github.io/" target="_blank">Sanjiban Choudhury</a>. -->
       <br><br>
       Prior to joining PhD, I was a Data & Applied Scientist at Microsoft working closely with <a href="http://manikvarma.org/" target="_blank">Dr. Manik Varma</a> at Microsoft Research India on web-scale algorithms for recommender system.
       Before that, I earned my Integrated M.Sc. in Mathematics and Computing from <a href="http://www.iitkgp.ac.in/" target="_blank">Indian Institute of Technology Kharagpur</a>. I also spent time in <a href="http://krssg.in/">KRSSG</a> working on path planning algorithms for autonomous soccer playing robots. 
@@ -109,7 +108,7 @@
 		<td width="67%" valign="top">
 			<p>
         <a href="pubs/Jain24.pdf" target="_blank" id="EPL">
-				<heading>Revisiting Successor Features for Inverse Reinforcement Learning </heading></a><br>
+				<heading>Non-Adversarial Inverse Reinforcement Learning via Successor Feature Matching </heading></a><br>
 				<strong>Arnav Kumar Jain</strong>, <a href="https://harwiltz.github.io/" target="_blank">Harley Wiltzer</a>, <a href="https://brosa.ca/" target="_blank">Jesse Farebrother</a>, <a href="https://irina-rish.com/" target="_blank">Irina Rish</a>, <a href="https://neo-x.github.io/" target="_blank">Glen Berseth</a>, <a href="https://sanjibanc.github.io/" target="_blank">Sanjiban Choudhury</a><br>
 			</p>	
       Models of Human Feedback for AI Alignment Workshop @ ICML, 2024<br>
@@ -123,14 +122,13 @@
 				<p align="justify" > <i id="Jain24abs"> In inverse reinforcement learning (IRL), an agent seeks to replicate expert demonstrations through interactions with the environment. Traditionally, IRL is treated as an adversarial game, where an adversary searches over reward models, and a learner optimizes the reward through repeated RL procedures. This game-solving approach is both computationally expensive and difficult to stabilize. Instead, we embrace a more fundamental perspective of IRL as that of state-occupancy matching: by matching the cumulative state features encountered by the expert, the agent can match the returns of the expert under any reward function in a hypothesis class. We present a simple yet novel framework for IRL where a policy greedily matches successor features of the expert where successor features efficiently compute the expected features of successive states observed by the agent. Our non-adversarial method does not require learning a reward function and can be solved seamlessly with existing value-based reinforcement learning algorithms. Remarkably, our approach works in state-only settings without expert action labels, a setting which behavior cloning (BC) cannot solve. Empirical results demonstrate that our method learns from as few as a single expert demonstration and achieves comparable performance on various control tasks. </i></p>
         
         <pre xml:space="preserve">
-          @inproceedings{
-              jain2024revisiting,
-              title={Revisiting Successor Features for Inverse Reinforcement Learning},
-              author={Arnav Kumar Jain and Harley Wiltzer and Jesse Farebrother and Irina Rish and Glen Berseth and Sanjiban Choudhury},
-              booktitle={ICML 2024 Workshop on Models of Human Feedback for AI Alignment},
-              year={2024},
-              url={https://openreview.net/forum?id=hmQve0ooT6}
-            }
+          @article{jain2024sfm,
+            title={Non-Adversarial Inverse Reinforcement Learning via Successor Feature Matching},
+            author={Arnav Kumar Jain and Harley Wiltzer and Jesse Farebrother and Irina Rish and Glen Berseth and Sanjiban Choudhury},
+            journal={CoRR},
+            volume={abs/2411.07007},
+            year={2024}
+          }
         </pre>
       </div>
     </td>

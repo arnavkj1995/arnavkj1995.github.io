@@ -111,6 +111,7 @@
 				<heading>Non-Adversarial Inverse Reinforcement Learning via Successor Feature Matching </heading></a><br>
 				<strong>Arnav Kumar Jain</strong>, <a href="https://harwiltz.github.io/" target="_blank">Harley Wiltzer</a>, <a href="https://brosa.ca/" target="_blank">Jesse Farebrother</a>, <a href="https://irina-rish.com/" target="_blank">Irina Rish</a>, <a href="https://neo-x.github.io/" target="_blank">Glen Berseth</a>, <a href="https://sanjibanc.github.io/" target="_blank">Sanjiban Choudhury</a><br>
 			</p>	
+      International Conference on Learning Representations (<b>ICLR</b>), 2025 <br>
       Models of Human Feedback for AI Alignment Workshop @ ICML, 2024<br>
 			<!-- </p> -->
 			<div class="paper" id="Jain24">
@@ -122,13 +123,14 @@
 				<p align="justify" > <i id="Jain24abs"> In inverse reinforcement learning (IRL), an agent seeks to replicate expert demonstrations through interactions with the environment. Traditionally, IRL is treated as an adversarial game, where an adversary searches over reward models, and a learner optimizes the reward through repeated RL procedures. This game-solving approach is both computationally expensive and difficult to stabilize. Instead, we embrace a more fundamental perspective of IRL as that of state-occupancy matching: by matching the cumulative state features encountered by the expert, the agent can match the returns of the expert under any reward function in a hypothesis class. We present a simple yet novel framework for IRL where a policy greedily matches successor features of the expert where successor features efficiently compute the expected features of successive states observed by the agent. Our non-adversarial method does not require learning a reward function and can be solved seamlessly with existing value-based reinforcement learning algorithms. Remarkably, our approach works in state-only settings without expert action labels, a setting which behavior cloning (BC) cannot solve. Empirical results demonstrate that our method learns from as few as a single expert demonstration and achieves comparable performance on various control tasks. </i></p>
         
         <pre xml:space="preserve">
-          @article{jain2024sfm,
-            title={Non-Adversarial Inverse Reinforcement Learning via Successor Feature Matching},
-            author={Arnav Kumar Jain and Harley Wiltzer and Jesse Farebrother and Irina Rish and Glen Berseth and Sanjiban Choudhury},
-            journal={CoRR},
-            volume={abs/2411.07007},
-            year={2024}
-          }
+          @inproceedings{
+              jain2025nonadversarial,
+              title={Non-Adversarial Inverse Reinforcement Learning via Successor Feature Matching},
+              author={Arnav Kumar Jain and Harley Wiltzer and Jesse Farebrother and Irina Rish and Glen Berseth and Sanjiban Choudhury},
+              booktitle={The Thirteenth International Conference on Learning Representations},
+              year={2025},
+              url={https://openreview.net/forum?id=LvRQgsvd5V}
+            }
         </pre>
       </div>
     </td>

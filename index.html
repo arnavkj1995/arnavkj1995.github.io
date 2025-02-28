@@ -68,6 +68,19 @@
   <!-- End : Google Analytics Code -->
   <!-- Scramble Script by Jeff Donahue -->
   <script src="js/scramble.js"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RQW73WXYW9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RQW73WXYW9');
+  </script>
+  <script type="text/javascript" async 
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script> 
 </head>
 
 <body>
@@ -104,6 +117,50 @@
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
   <tr>
+		<td width="33%" valign="top" align="center"><a href="pubs/Jain25.pdf" target="_blank"><img src="images/Jain25.gif" alt="EPL" width="100%" style="border-radius:1px"></a></td>
+		<td width="67%" valign="top">
+			<p>
+        <a href="pubs/Jain25.pdf" target="_blank" id="EPL">
+				<heading>Multi-Turn Code Generation Through Single-Step Rewards </heading></a><br>
+				<strong>Arnav Kumar Jain</strong><sup>*</sup>, 
+          <a href="https://gonzalogonzalezpumariega.com/">Gonzalo Gonzalez-Pumariega<sup>*</sup></a>,
+          <a href="https://www.linkedin.com/in/waynechen314/">Wayne Chen</a>,</span>
+          <a href="https://rush-nlp.com/">Alexander M Rush</a>,
+          <a href="https://wenting-zhao.github.io/">Wenting Zhao</a>,
+          <a href="https://sanjibanc.github.io/" target="_blank">Sanjiban Choudhury</a><br>
+			</p>	
+      Preprint.<br>
+			<!-- </p> -->
+			<div class="paper" id="Jain25">
+				<a href="javascript:toggleblock('Jain25abs')">abstract</a> /
+				<a shape="rect" href="javascript:togglebib('Jain25')" class="togglebib">bibtex</a> /
+				<a href="pubs/Jain25.pdf" target="_blank">pdf</a> /
+        <a href="https://github.com/portal-cornell/muCode" target="_blank">code</a> /
+				<a href="https://portal-cornell.github.io/muCode/" target="_blank">website</a>
+				<br>
+				<p align="justify" > <i id="Jain25abs">  We address the problem of code generation from multi-turn execution feedback. 
+          Existing methods either generate code without feedback or use complex, hierarchical reinforcement learning to optimize multi-turn rewards.
+          We propose a simple yet scalable approach, \( \mu \texttt{Code} \), that solves multi-turn code generation using only single-step rewards.
+          Our key insight is that code generation is a one-step recoverable MDP, where the correct code can be recovered from any intermediate code state in a single turn.
+          \( \mu \texttt{Code} \) iteratively trains both a generator to provide  code solutions conditioned on multi-turn execution feedback and a verifier to score the newly generated code.
+          Experimental evaluations show that our approach achieves significant improvements over the state-of-the-art generator-verifier baselines. 
+          We provide analysis of the design choices of the reward models and policy, and show the efficacy of \( \mu \texttt{Code} \) at utilizing the execution feedback. </i></p>
+        
+        <pre xml:space="preserve">
+          @article{jain2025multi,
+            title={Multi-Turn Code Generation Through Single Step Rewards},
+            author={Arnav Kumar Jain and Gonzalo Gonzalez-Pumariega and Wayne Chen and Alexander M Rush and Wenting Zhao and Sanjiban Choudhury},
+            journal={CoRR},
+            volume={abs/2502.20380},
+            year={2025}
+          } 
+        </pre>
+      </div>
+    </td>
+  </tr>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tr>
 		<td width="33%" valign="top" align="center"><a href="pubs/Jain24.pdf" target="_blank"><img src="images/Jain24.png" alt="EPL" width="100%" style="border-radius:1px"></a></td>
 		<td width="67%" valign="top">
 			<p>
@@ -119,6 +176,7 @@
 				<a shape="rect" href="javascript:togglebib('Jain24')" class="togglebib">bibtex</a> /
 				<a href="pubs/Jain24.pdf" target="_blank">pdf</a> /
 				<a href="https://github.com/arnavkj1995/SFM" target="_blank">code</a>
+        <a href="https://arnavkj1995.github.io/SFM/" target="_blank">website</a>
 				<br>
 				<p align="justify" > <i id="Jain24abs"> In inverse reinforcement learning (IRL), an agent seeks to replicate expert demonstrations through interactions with the environment. Traditionally, IRL is treated as an adversarial game, where an adversary searches over reward models, and a learner optimizes the reward through repeated RL procedures. This game-solving approach is both computationally expensive and difficult to stabilize. Instead, we embrace a more fundamental perspective of IRL as that of state-occupancy matching: by matching the cumulative state features encountered by the expert, the agent can match the returns of the expert under any reward function in a hypothesis class. We present a simple yet novel framework for IRL where a policy greedily matches successor features of the expert where successor features efficiently compute the expected features of successive states observed by the agent. Our non-adversarial method does not require learning a reward function and can be solved seamlessly with existing value-based reinforcement learning algorithms. Remarkably, our approach works in state-only settings without expert action labels, a setting which behavior cloning (BC) cannot solve. Empirical results demonstrate that our method learns from as few as a single expert demonstration and achieves comparable performance on various control tasks. </i></p>
         
@@ -389,6 +447,9 @@
 
 <script xml:space="preserve" language="JavaScript">
 hideallbibs();
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('Jain25abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('Jain24abs');

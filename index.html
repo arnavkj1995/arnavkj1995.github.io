@@ -43,6 +43,39 @@
      font-size: 60px;
      font-weight: 400
   }
+  <style>
+    .bibtex-container {
+      position: relative;
+      background: #f5f5f5;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 0.5em;
+      margin-top: 0.5em;
+      font-family: monospace;
+      overflow-x: auto;
+    }
+  
+    .copy-btn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      padding: 0.2em 0.5em;
+      font-size: 0.8em;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      background-color: #007acc;
+      color: white;
+    }
+  
+    .copy-btn:hover {
+      background-color: #005fa3;
+    }
+  
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+    }
   </style>
   <!-- <link rel="icon" type="image/png" href="images/W.png"> -->
   <script type="text/javascript" src="js/hidebib.js"></script>
@@ -97,15 +130,15 @@
 		<td width="32%" valign="top"><a href="#Bio">
 			<img src="images/me.png" width="100%" style="border-radius:15px"></a>
 			<p align=center>
-				<a href="resources/CV.pdf" target="_blank">CV</a> | <a href="https://scholar.google.com/citations?hl=en&user=tu7wKckAAAAJ" target="_blank">Scholar</a> | <a href="https://github.com/arnavkj1995" target="_blank">Github</a> | <a href="https://twitter.com/arnavkj95" target="_blank">Twitter</a>
+				<a href="resources/CV.pdf" target="_blank">CV</a> | <a href="https://scholar.google.com/citations?hl=en&user=tu7wKckAAAAJ" target="_blank">Scholar</a> | <a href="https://github.com/arnavkj1995" target="_blank">Github</a> | <a href="https://x.com/arnavkj95" target="_blank">X</a>
 			</p>
 		</td>
 
 		<td width="68%" valign="top" align="justify" id="Bio">
 			I am a Ph.D. student at <a href="https://www.umontreal.ca/" target="_blank">Université de Montréal</a> and <a href="https://mila.quebec/" target="_blank">Mila</a> advised by <a href="https://mila.quebec/en/person/irina-rish/" target="_blank">Prof. Irina Rish</a>, and closely collaborating with <a href="https://sanjibanc.github.io/" target="_blank">Sanjiban Choudhury</a>. 
-      I am interested in developing efficient decision-making agents, with my work focusing on imitation from few demonstrations and exploration with limited interactions.
+      I am interested in developing decision-making agents, with my research focusing on imitation learning from few demonstrations and large language model (LLM) agents that incorporate reasoning or execution feedback.
       <br><br>
-      Prior to joining PhD, I was a Data & Applied Scientist at Microsoft working closely with <a href="http://manikvarma.org/" target="_blank">Dr. Manik Varma</a> at Microsoft Research India on web-scale algorithms for recommender system.
+      Prior to joining PhD, I was a Data & Applied Scientist at Microsoft working closely with <a href="http://manikvarma.org/" target="_blank">Dr. Manik Varma</a> at Microsoft Research India on eXtreme Classification for web-scale recommender systems.
       Before that, I earned my Integrated M.Sc. in Mathematics and Computing from <a href="http://www.iitkgp.ac.in/" target="_blank">Indian Institute of Technology Kharagpur</a>. I also spent time in <a href="http://krssg.in/">KRSSG</a> working on path planning algorithms for autonomous soccer playing robots. 
     </td>
 	</tr>
@@ -115,6 +148,11 @@
 	<tr><td id="Publications"> <sectionheading>&nbsp;&nbsp;Recent News</sectionheading><div style="float: right;"></div></td></tr>
 </table>
 <table width="100%" align="center">
+  <tr>
+    <td width="10%">&nbsp;&nbsp;&nbsp;&nbsp; [Jun 25]</td>
+    <td width="90%">Excited to share \( \texttt{SAILOR} \): learning to search for model-based Inverse RL that outperforms Diffusion Policies on visual manipulation tasks.</td>
+  </tr>
+  
   <tr>
     <td width="10%">&nbsp;&nbsp;&nbsp;&nbsp; [Mar 25]</td>
     <td width="90%">\( \mu \texttt{Code} \) accepted at ICML 2025 <span style="color: red;"> (Spotlight)</span>!</td>
@@ -134,15 +172,79 @@
 </table>
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-	<tr><td id="Publications"> <sectionheading>&nbsp;&nbsp;Selected Publications</sectionheading><div style="float: right;"></div></td></tr>
+	<tr><td id="Publications"> <sectionheading>&nbsp;&nbsp;Research</sectionheading><div style="float: right;"></div></td></tr>
 </table>
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  
   <tr>
-		<td width="30%" valign="top" align="center"><a href="pubs/Jain25.pdf" target="_blank"><img src="images/Jain25.gif" alt="EPL" width="100%" style="border-radius:1px"></a></td>
+		<td width="30%" valign="top" align="center"><a href="https://gokul.dev/sailor" target="_blank"><img src="images/Jain25sailor.gif" alt="SAILOR" width="100%" style="border-radius:1px"></a></td>
 		<td width="70%" valign="top">
 			<p>
-        <a href="pubs/Jain25.pdf" target="_blank" id="EPL">
+        <a href="https://gokul.dev/sailor" target="_blank" id="SAILOR">
+				<heading>A Smooth Sea Never Made a Skilled SAILOR: Robust Imitation via Learning to Search</heading></a><br>
+				<strong>Arnav Kumar Jain</strong><sup>*</sup>, 
+          <a href="https://sites.google.com/view/vibhakarmohta/">Vibhakar Mohta<sup>*</sup></a>,
+          <a href="https://ksb21st.github.io/">Subin Kim</a>,</span>
+          <a href="https://atikshb.github.io/">Juntao Ren</a>,
+          <a href="(yunhaifeng.com">Yunhai Feng</a>,
+          <a href="https://sanjibanc.github.io/"">Sanjiban Choudhury</a>,
+          <a href="https://gokul.dev/">Gokul Swamy</a><br>
+			</p>	
+      Preprint.
+			<!-- </p> -->
+			<div class="paper" id="Jain25sailor">
+				<a href="javascript:toggleblock('Jain25sailorabs')">Abstract</a> /
+				<!-- <a shape="rect" href="javascript:togglebib('Jain25sailor')" class="togglebib">bibtex</a> / -->
+				<a href="https://arxiv.org/pdf/2506.05294" target="_blank">Paper</a> /
+        <a href="https://github.com/arnavkj1995/SAILOR" target="_blank">Code</a> /
+				<a href="https://gokul.dev/sailor" target="_blank">Website</a>
+				<br>
+				<p align="justify" > <i id="Jain25sailorabs">  The fundamental limitation of the behavioral cloning (BC) approach to imitation
+          learning is that it only teaches an agent what the expert did at states the expert
+          visited. This means that when a BC agent makes a mistake which takes them
+          out of the support of the demonstrations, they often don’t know how to recover
+          from it. In this sense, BC is akin to giving the agent the fish – giving them dense
+          supervision across a narrow set of states – rather than teaching them to fish: to
+          be able to reason independently about achieving the expert’s outcome even when
+          faced with unseen situations at test-time. In response, we explore learning to
+          search (L2S) from expert demonstrations, i.e. learning the components required to,
+          at test time, plan to match expert outcomes, even after making a mistake. These
+          include (1) a world model and (2) a reward model. We carefully ablate the set of
+          algorithmic and design decisions required to combine these and other components
+          for stable and sample/interaction-efficient learning of recovery behavior without
+          additional human corrections. Across a dozen visual manipulation tasks from
+          three benchmarks, our approach SAILOR consistently out-performs state-of-the-art
+          Diffusion Policies trained via BC on the same data. Furthermore, scaling up the
+          amount of demonstrations used for BC by 5-10× still leaves a performance gap.
+          We find that SAILOR can identify nuanced failures and is robust to reward hacking.
+          Our code is available at <a href="https://github.com/arnavkj1995/SAILOR" target="_blank">https://github.com/arnavkj1995/SAILOR</a>.
+        </i></p>
+        
+        <!-- <details> -->
+          <!-- <summary>BibTeX</summary>
+          <div class="bibtex-container">
+            <button class="copy-btn" onclick="copyBibtex(this)">Copy</button>
+            <pre id="bibtex-content">
+        @article{jain2025sailor,
+          title={A Smooth Sea Never Made a Skilled 𝚂𝙰𝙸𝙻𝙾𝚁: Robust Imitation via Learning to Search},
+          author={Arnav Kumar Jain and Vibhakar Mohta and Subin Kim and Atiksh Bhardwaj and Juntao Ren and Yunhai Feng and Sanjiban Choudhury and Gokul Swamy},
+          journal={CoRR},
+          volume={abs/2506.05294},
+          year={2025}
+        } -->
+            <!-- </pre>
+          </div> -->
+        <!-- </details> -->
+      </div>
+    </td>
+  </tr>
+  
+  <tr>
+		<td width="30%" valign="top" align="center"><a href="https://portal-cornell.github.io/muCode/" target="_blank"><img src="images/Jain25.gif" alt="muCode" width="100%" style="border-radius:1px"></a></td>
+		<td width="70%" valign="top">
+			<p>
+        <a href="https://portal-cornell.github.io/muCode/" target="_blank" id="muCode">
 				<heading>Multi-Turn Code Generation Through Single-Step Rewards </heading></a><br>
 				<strong>Arnav Kumar Jain</strong><sup>*</sup>, 
           <a href="https://gonzalogonzalezpumariega.com/">Gonzalo Gonzalez-Pumariega<sup>*</sup></a>,
@@ -155,11 +257,11 @@
       Verif-AI, SSI-FM, Reasoning and Planning Workshops @ ICLR, 2025<br><br>
 			<!-- </p> -->
 			<div class="paper" id="Jain25">
-				<a href="javascript:toggleblock('Jain25abs')">abstract</a> /
-				<a shape="rect" href="javascript:togglebib('Jain25')" class="togglebib">bibtex</a> /
-				<a href="pubs/Jain25.pdf" target="_blank">pdf</a> /
-        <a href="https://github.com/portal-cornell/muCode" target="_blank">code</a> /
-				<a href="https://portal-cornell.github.io/muCode/" target="_blank">website</a>
+				<a href="javascript:toggleblock('Jain25abs')">Abstract</a> /
+				<!-- <a shape="rect" href="javascript:togglebib('Jain25')" class="togglebib">bibtex</a> / -->
+				<a href="https://arxiv.org/pdf/2502.20380" target="_blank">Paper</a> /
+        <a href="https://github.com/portal-cornell/muCode" target="_blank">Code</a> /
+				<a href="https://portal-cornell.github.io/muCode/" target="_blank">Website</a>
 				<br>
 				<p align="justify" > <i id="Jain25abs">  We address the problem of code generation from multi-turn execution feedback. 
           Existing methods either generate code without feedback or use complex, hierarchical reinforcement learning to optimize multi-turn rewards.
@@ -169,25 +271,27 @@
           Experimental evaluations show that our approach achieves significant improvements over the state-of-the-art generator-verifier baselines. 
           We provide analysis of the design choices of the reward models and policy, and show the efficacy of \( \mu \texttt{Code} \) at utilizing the execution feedback. </i></p>
         
-        <pre xml:space="preserve">
-          @article{jain2025multi,
-            title={Multi-Turn Code Generation Through Single Step Rewards},
-            author={Arnav Kumar Jain and Gonzalo Gonzalez-Pumariega and Wayne Chen and Alexander M Rush and Wenting Zhao and Sanjiban Choudhury},
-            journal={CoRR},
-            volume={abs/2502.20380},
-            year={2025}
-          } 
-        </pre>
+        <!-- <pre xml:space="preserve">
+          @inproceedings{
+              jain2025multiturn,
+              title={Multi-Turn Code Generation Through Single-Step Rewards},
+              author={Arnav Kumar Jain and Gonzalo Gonzalez-Pumariega and Wayne Chen and Alexander M Rush and Wenting Zhao and Sanjiban Choudhury},
+              booktitle={Forty-second International Conference on Machine Learning},
+              year={2025},
+              url={https://openreview.net/forum?id=aJeLhLcsh0}
+          }
+        </pre> -->
       </div>
     </td>
   </tr>
 
+
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
   <tr>
-		<td width="30%" valign="top" align="center"><a href="pubs/Jain24.pdf" target="_blank"><img src="images/Jain24.png" alt="EPL" width="100%" style="border-radius:1px"></a></td>
+		<td width="30%" valign="top" align="center"><a href="https://arnavkj1995.github.io/SFM/" target="_blank"><img src="images/Jain24.png" alt="EPL" width="100%" style="border-radius:1px"></a></td>
 		<td width="70%" valign="top">
 			<p>
-        <a href="pubs/Jain24.pdf" target="_blank" id="EPL">
+        <a href="https://arnavkj1995.github.io/SFM/" target="_blank" id="EPL">
 				<heading>Non-Adversarial Inverse Reinforcement Learning via Successor Feature Matching </heading></a><br>
 				<strong>Arnav Kumar Jain</strong>, <a href="https://harwiltz.github.io/" target="_blank">Harley Wiltzer</a>, <a href="https://brosa.ca/" target="_blank">Jesse Farebrother</a>, <a href="https://irina-rish.com/" target="_blank">Irina Rish</a>, <a href="https://neo-x.github.io/" target="_blank">Glen Berseth</a>, <a href="https://sanjibanc.github.io/" target="_blank">Sanjiban Choudhury</a><br>
 			</p>	
@@ -195,15 +299,15 @@
       Models of Human Feedback for AI Alignment Workshop @ ICML, 2024<br>
 			<!-- </p> -->
 			<div class="paper" id="Jain24">
-				<a href="javascript:toggleblock('Jain24abs')">abstract</a> /
-				<a shape="rect" href="javascript:togglebib('Jain24')" class="togglebib">bibtex</a> /
-				<a href="pubs/Jain24.pdf" target="_blank">pdf</a> /
-				<a href="https://github.com/arnavkj1995/SFM" target="_blank">code</a> /
-        <a href="https://arnavkj1995.github.io/SFM/" target="_blank">website</a>
+				<a href="javascript:toggleblock('Jain24abs')">Abstract</a> /
+				<!-- <a shape="rect" href="javascript:togglebib('Jain24')" class="togglebib">bibtex</a> / -->
+				<a href="https://openreview.net/pdf?id=LvRQgsvd5V" target="_blank">Paper</a> /
+				<a href="https://github.com/arnavkj1995/SFM" target="_blank">Code</a> /
+        <a href="https://arnavkj1995.github.io/SFM/" target="_blank">Website</a>
 				<br>
 				<p align="justify" > <i id="Jain24abs"> In inverse reinforcement learning (IRL), an agent seeks to replicate expert demonstrations through interactions with the environment. Traditionally, IRL is treated as an adversarial game, where an adversary searches over reward models, and a learner optimizes the reward through repeated RL procedures. This game-solving approach is both computationally expensive and difficult to stabilize. Instead, we embrace a more fundamental perspective of IRL as that of state-occupancy matching: by matching the cumulative state features encountered by the expert, the agent can match the returns of the expert under any reward function in a hypothesis class. We present a simple yet novel framework for IRL where a policy greedily matches successor features of the expert where successor features efficiently compute the expected features of successive states observed by the agent. Our non-adversarial method does not require learning a reward function and can be solved seamlessly with existing value-based reinforcement learning algorithms. Remarkably, our approach works in state-only settings without expert action labels, a setting which behavior cloning (BC) cannot solve. Empirical results demonstrate that our method learns from as few as a single expert demonstration and achieves comparable performance on various control tasks. </i></p>
         
-        <pre xml:space="preserve">
+        <!-- <pre xml:space="preserve">
           @inproceedings{
               jain2025nonadversarial,
               title={Non-Adversarial Inverse Reinforcement Learning via Successor Feature Matching},
@@ -212,17 +316,17 @@
               year={2025},
               url={https://openreview.net/forum?id=LvRQgsvd5V}
             }
-        </pre>
+        </pre> -->
       </div>
     </td>
   </tr>
   
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
   <tr>
-		<td width="30%" valign="top" align="center"><a href="pubs/Jain23.pdf" target="_blank"><img src="images/Jain23.png" alt="EPL" width="100%" style="border-radius:1px"></a></td>
+		<td width="30%" valign="top" align="center"><a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/9c7900fac04a701cbed83256b76dbaa3-Paper-Conference.pdf" target="_blank"><img src="images/Jain23.png" alt="EPL" width="100%" style="border-radius:1px"></a></td>
 		<td width="70%" valign="top">
 			<p>
-        <a href="pubs/Jain23.pdf" target="_blank" id="EPL">
+        <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/9c7900fac04a701cbed83256b76dbaa3-Paper-Conference.pdf" target="_blank" id="EPL">
 				<heading>Maximum State Entropy Exploration using Predecessor and Successor Representations </heading></a><br>
 				<strong>Arnav Kumar Jain</strong>, <a href="https://lucaslehnert.github.io/" target="_blank">Lucas Lehnert</a>, <a href="https://irina-rish.com/" target="_blank">Irina Rish</a>, <a href="https://neo-x.github.io/" target="_blank">Glen Berseth</a><br>
 			</p>	
@@ -230,10 +334,10 @@
         Frontiers4LCD Workshop @ ICML, 2023<br>
 			<!-- </p> -->
 			<div class="paper" id="Jain23">
-				<a href="javascript:toggleblock('Jain23abs')">abstract</a> /
-				<a shape="rect" href="javascript:togglebib('Jain23')" class="togglebib">bibtex</a> /
-				<a href="pubs/Jain23.pdf" target="_blank">pdf</a> /
-				<a href="https://github.com/arnavkj1995/Eta_Psi_Learning" target="_blank">code</a>
+				<a href="javascript:toggleblock('Jain23abs')">Abstract</a> /
+				<!-- <a shape="rect" href="javascript:togglebib('Jain23')" class="togglebib">bibtex</a> / -->
+				<a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/9c7900fac04a701cbed83256b76dbaa3-Paper-Conference.pdf" target="_blank">Paper</a> /
+				<a href="https://github.com/arnavkj1995/Eta_Psi_Learning" target="_blank">Code</a>
 				<br>
 				<p align="justify" > <i id="Jain23abs"> Animals have a developed ability to explore that aids them in important tasks such as locating food, exploring for shelter, and finding misplaced items. These exploration skills necessarily track where they have been so that they can plan for finding items with relative efficiency. Contemporary exploration algorithms often learn a less efficient exploration strategy because they either condition only on the current state or simply rely on making random open-loop exploratory moves. In this work, we propose ηψ-Learning, a method to learn efficient exploratory policies by conditioning on past episodic experience to make the next exploratory move. Specifically, ηψ-Learning learns an exploration policy that maximizes the entropy of the state visitation distribution of a single trajectory. Furthermore, we demonstrate how variants of the predecessor representation and successor representations can be combined to predict the state visitation entropy. Our experiments demonstrate the efficacy of ηψ-Learning to strategically explore the environment and maximize the state coverage with limited samples. </i></p>
         
@@ -252,10 +356,10 @@
   </tr>
   
   <tr>
-		<td width="30%" valign="top" align="center"><a href="pubs/Jain22.pdf" target="_blank"><img src="images/Jain22.png" alt="VSG" width="100%" style="border-radius:1px"></a></td>
+		<td width="30%" valign="top" align="center"><a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/0a97df4ce5b403ea87645010e9005130-Paper-Conference.pdf" target="_blank"><img src="images/Jain22.png" alt="VSG" width="100%" style="border-radius:1px"></a></td>
 		<td width="70%" valign="top">
 			<p>
-        <a href="pubs/Jain22.pdf" target="_blank" id="VSG">
+        <a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/0a97df4ce5b403ea87645010e9005130-Paper-Conference.pdf" target="_blank" id="VSG">
 				<heading>Learning Robust Dynamics through Variational Sparse Gating</heading></a><br>
 				<strong>Arnav Kumar Jain</strong>, <a href="https://shivakanthsujit.github.io/" target="_blank">Shivakanth Sujit</a>, <a href="https://shrutij01.github.io/" target="_blank">Shruti Joshi</a>, <a href="http://www-ens.iro.umontreal.ca/~michals/" target="_blank">Vincent Michalski</a>, <a href="https://danijar.com/">Danijar Hafner</a> and <a href="https://saebrahimi.github.io/" target="_blank">Samira-Ebrahimi Kahou</a><br>
 			</p>	
@@ -263,10 +367,10 @@
         DeepRL Workshop @ NeurIPS, 2021<br>
 			<!-- </p> -->
 			<div class="paper" id="Jain22">
-				<a href="javascript:toggleblock('Jain22abs')">abstract</a> /
-				<a shape="rect" href="javascript:togglebib('Jain22')" class="togglebib">bibtex</a> /
-				<a href="pubs/Jain22.pdf" target="_blank">pdf</a> /
-				<a href="https://github.com/arnavkj1995/VSG" target="_blank">code</a>
+				<a href="javascript:toggleblock('Jain22abs')">Abstract</a> /
+				<!-- <a shape="rect" href="javascript:togglebib('Jain22')" class="togglebib">bibtex</a> / -->
+				<a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/0a97df4ce5b403ea87645010e9005130-Paper-Conference.pdf" target="_blank">Paper</a> /
+				<a href="https://github.com/arnavkj1995/VSG" target="_blank">Code</a>
 				<br>
 				<p align="justify" > <i id="Jain22abs"> Learning world models from their sensory inputs enables agents to plan for actions by imagining their future outcomes. World models have previously been shown to improve sample-efficiency in simulated environments with few objects, but have not yet been applied successfully to environments with many objects. In environments with many objects, often only a small number of them are moving or interacting at the same time. In this paper, we investigate integrating this inductive bias of sparse interactions into the latent dynamics of world models trained from pixels. First, we introduce Variational Sparse Gating (VSG), a latent dynamics model that updates its feature dimensions sparsely through stochastic binary gates. Moreover, we propose a simplified architecture Simple Variational Sparse Gating (SVSG) that removes the deterministic pathway of previous models, resulting in a fully stochastic transition function that leverages the VSG mechanism. We evaluate the two model architectures in the BringBackShapes (BBS) environment that features a large number of moving objects and partial observability, demonstrating clear improvements over prior models. </i></p>
         
@@ -288,20 +392,20 @@
   </tr>
 
   <tr>
-		<td width="30%" valign="top" align="center"><a href="pubs/Saini21.pdf" target="_blank"><img src="images/Saini21.jpg" alt="GalaXC" width="100%" style="border-radius:1px"></a></td>
+		<td width="30%" valign="top" align="center"><a href="http://manikvarma.org/pubs/saini21.pdf" target="_blank"><img src="images/Saini21.jpg" alt="GalaXC" width="100%" style="border-radius:1px"></a></td>
 		<td width="70%" valign="top">
 			<p>
-        <a href="pubs/Saini21.pdf" target="_blank" id="GalaXC">
+        <a href="http://manikvarma.org/pubs/saini21.pdf" target="_blank" id="GalaXC">
 				<heading>GalaXC: Graph Neural Networks with Labelwise Attention for Extreme Classification</heading></a><br>
 				<a href="http://deepaksaini119.github.io/" target="_blank">Deepak Saini</a>*, <strong>Arnav Kumar Jain</strong>*, Kushal Dave*, Jian Jiao, Amit Singh, Ruofei Zhang and <a href="http://manikvarma.org" target="_blank">Manik Varma</a><br>
 			</p>
       	
       The Web Conference (<b>TheWebConf</b>), 2021<br>			
 			<div class="paper" id="Saini21">
-				<a href="javascript:toggleblock('Saini21abs')">abstract</a> /
-				<a shape="rect" href="javascript:togglebib('Saini21')" class="togglebib">bibtex</a> /
-				<a href="pubs/Saini21.pdf" target="_blank">pdf</a> /
-				<a href="https://github.com/Extreme-classification/GalaXC" target="_blank">code</a>
+				<a href="javascript:toggleblock('Saini21abs')">Abstract</a> /
+				<!-- <a shape="rect" href="javascript:togglebib('Saini21')" class="togglebib">bibtex</a> / -->
+				<a href="http://manikvarma.org/pubs/saini21.pdf" target="_blank">Paper</a> /
+				<a href="https://github.com/Extreme-classification/GalaXC" target="_blank">Code</a>
 				<br>
 				<p align="justify" > <i id="Saini21abs">This paper develops the GalaXC algorithm for Extreme Classification, where the task is to annotate a document with the most relevant subset of labels from an extremely large label set. Extreme classification has been successfully applied to several real world web-scale applications such as web search, product recommendation, query rewriting, etc. GalaXC identifies two critical deficiencies in leading extreme classification algorithms. First, existing approaches generally assume that documents and labels reside in disjoint sets, even though in several applications, labels and documents cohabit the same space. Second, several approaches, albeit scalable, do not utilize various forms of metadata offered by applications, such as label text and label correlations. To remedy these, GalaXC presents a framework that enables collaborative learning over joint document-label graphs at massive scales, in a way that naturally allows various auxiliary sources of information, including label metadata, to be incorporated. GalaXC also introduces a novel label-wise attention mechanism to meld high-capacity extreme classifiers with its framework. An efficient end-to-end implementation of GalaXC is presented that could be trained on a dataset with 50M labels and 97M training documents in less than 100 hours on 4xV100 GPUs. This allowed GalaXC to not only scale to applications with several millions of labels, but also be up to 18% more accurate than leading deep extreme classifiers, while being upto 2-50x faster to train and 10x faster to predict on benchmark datasets. GalaXC is particularly well-suited to warm-start scenarios where predictions need to be made on data points with partially revealed label sets, and was found to be up to 25% more accurate than extreme classification algorithms specifically designed for warm start settings. In A/B tests conducted on the Bing search engine, GalaXC could improve the Click Yield (CY) and coverage by 1.52% and 1.11% respectively. Code for GalaXC is available at <a href="https://github.com/Extreme-classification/GalaXC">https://github.com/Extreme-classification/GalaXC</a>.</i></p>
 
@@ -323,10 +427,10 @@
   	</tr>
 
     <tr>
-    <td width="30%" valign="top" align="center"><a href="pubs/Lahiri20.pdf" target="_blank"><img src="images/Lahiri20.gif" alt="PriorGAN" width="100%" style="border-radius:1px"></a></td>
+    <td width="30%" valign="top" align="center"><a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Lahiri_Prior_Guided_GAN_Based_Semantic_Inpainting_CVPR_2020_paper.pdf" target="_blank"><img src="images/Lahiri20.gif" alt="PriorGAN" width="100%" style="border-radius:1px"></a></td>
     <td width="70%" valign="top">
       <p>
-        <a href="pubs/Lahiri20.pdf" target="_blank" id="PriorGAN">
+        <a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Lahiri_Prior_Guided_GAN_Based_Semantic_Inpainting_CVPR_2020_paper.pdf" target="_blank" id="PriorGAN">
         <heading>Prior Guided GAN Based Semantic Inpainting</heading></a><br>
         <a href="https://sites.google.com/site/aviseklahiri/home" target="_blank">Avisek Lahiri*</a>, <strong>Arnav Kumar Jain</strong>*, Sanskar Agrawal, <a href="https://cse.iitkgp.ac.in/~pabitra/" target="_blank">Pabitra Mitra</a>, and <a href="http://www.iitkgp.ac.in/department/EC/faculty/ec-pkb" target="_blank">Prabir Kumar Biswas</a> <br>
       </p>
@@ -334,22 +438,22 @@
       Computer Vision and Patten Recognition (<b>CVPR</b>), 2020<br>
       <!-- Long Oral presentation<br> -->
       <div class="paper" id="lahiri2020prior">
-        <a href="javascript:toggleblock('Lahiri20abs')">abstract</a> /
-        <a shape="rect" href="javascript:togglebib('lahiri2020prior')" class="togglebib">bibtex</a> /
-        <a href="pubs/Lahiri20.pdf" target="_blank">pdf</a> /
-        <a href="resources/Lahiri20slides.pdf" target="_blank">slides</a>
+        <a href="javascript:toggleblock('Lahiri20abs')">Abstract</a> /
+        <!-- <a shape="rect" href="javascript:togglebib('lahiri2020prior')" class="togglebib">bibtex</a> / -->
+        <a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Lahiri_Prior_Guided_GAN_Based_Semantic_Inpainting_CVPR_2020_paper.pdf" target="_blank">Paper</a> /
+        <a href="resources/Lahiri20slides.pdf" target="_blank">Slides</a>
         <br>
         <p align="justify" > <i id="Lahiri20abs">Contemporary deep learning based semantic inpainting can be approached from two directions. First, and the more explored,  approach is to train an offline deep regression network over the masked pixels with an additional refinement by adversarial training. This approach requires a single feed-forward pass for inpainting at inference. Another promising, yet unexplored approach is to first train a generative model to map a latent prior distribution to natural image manifold and during inference time search for the `best-matching' prior to reconstruct the signal. The primary aversion towards the latter genre is due to its inference time iterative optimization and difficulty to scale to higher resolution. In this paper, going against the general trend, we focus on the second paradigm of inpainting and address both of its mentioned problems. Most importantly, we learn a data driven parametric network to directly predict a matching prior for a given masked image. This converts an iterative paradigm to a single feed forward inference pipeline with around 800x speedup.  We also regularize our network with structural prior (computed from the masked image itself) which helps in better preservation of pose and size of the object to be inpainted. Moreover, to extend our model for sequence reconstruction, we propose a recurrent net based grouped latent prior learning. Finally, we leverage recent advancements in high resolution GAN training to scale our inpainting network to 256x256. Experiments (spanning across resolutions from 64x64 to 256x256) conducted on SVHN, Standford Cars, CelebA, CelebA-HQ and ImageNet image datasets, and FaceForensics video datasets reveal that we consistently improve upon contemporary benchmarks from both schools of approaches.</a>.</i></p>
         <pre xml:space="preserve">
-@inproceedings{lahiri2020prior,
-  title     = {Prior Guided GAN Based Semantic Inpainting},
-  author    = {Lahiri, Avisek and Jain, Arnav Kumar and Agrawal, 
-    Sanskar and Mitra, Pabitra and Biswas, Prabir Kumar},
-  booktitle = {Proceedings of the IEEE/CVF Conference on Computer 
-    Vision and Pattern Recognition},
-  pages     = {13696--13705},
-  year      = {2020}
-}
+            @inproceedings{lahiri2020prior,
+              title     = {Prior Guided GAN Based Semantic Inpainting},
+              author    = {Lahiri, Avisek and Jain, Arnav Kumar and Agrawal, 
+                Sanskar and Mitra, Pabitra and Biswas, Prabir Kumar},
+              booktitle = {Proceedings of the IEEE/CVF Conference on Computer 
+                Vision and Pattern Recognition},
+              pages     = {13696--13705},
+              year      = {2020}
+            }
           </pre>
         </div>
       </td>
@@ -466,6 +570,9 @@
 hideallbibs();
 </script>
 <script xml:space="preserve" language="JavaScript">
+  hideblock('Jain25sailorabs');
+</script>
+<script xml:space="preserve" language="JavaScript">
   hideblock('Jain25abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
@@ -500,6 +607,15 @@ hideblock('acknowledgements');
 </script>
 <script xml:space="preserve" language="JavaScript">
 hideblock('quotes');
+</script>
+<script>
+  function copyBibtex(button) {
+    const pre = button.parentElement.querySelector('pre');
+    navigator.clipboard.writeText(pre.innerText).then(() => {
+      button.textContent = 'Copied!';
+      setTimeout(() => button.textContent = 'Copy', 2000);
+    });
+  }
 </script>
 
 </body>

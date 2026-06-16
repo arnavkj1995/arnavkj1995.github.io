@@ -152,6 +152,11 @@
 </table>
 <table width="100%" align="center">
   <tr>
+    <td width="10%">&nbsp;&nbsp;&nbsp;&nbsp; [Jun 26]</td>
+    <td width="90%">Excited to share \( \texttt{WEAVER} \) 🌐: a world model for robot manipulation built around three key desiderata: (i) 🔍 Fidelity, (ii) 🔗 Consistency, and (iii) ⚡ Efficiency; that unlocks multiple downstream applications--policy evaluation, policy improvement, and test-time planning.</td>
+  </tr>
+
+  <tr>
     <td width="10%">&nbsp;&nbsp;&nbsp;&nbsp; [Sep 25]</td>
     <td width="90%">\( \texttt{SAILOR} \) accepted at NeurIPS 2025 <span style="color: red;"> (Spotlight)</span>!</td>
   </tr>
@@ -190,6 +195,29 @@
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
   
+  <tr>
+		<td width="30%" valign="top" align="center"><a href="https://arnavkj1995.github.io/WEAVER/" target="_blank"><img src="images/Jain26weaver.png" alt="WEAVER" width="100%" style="border-radius:1px"></a></td>
+		<td width="70%" valign="top">
+			<p>
+        <a href="https://arnavkj1995.github.io/WEAVER/" target="_blank" id="WEAVER">
+				<heading>\( \texttt{WEAVER} \), Better, Faster, Longer: An Effective World Model for Robotic Manipulation</heading></a><br>
+				<strong>Arnav Kumar Jain</strong><sup>*</sup>, 
+          <a href="https://yilin-wu98.github.io/">Yilin Wu<sup>*</sup></a>,
+          <a href="https://brosa.ca/">Jesse Farebrother</a>,
+          <a href="https://gokul.dev/">Gokul Swamy</a>,
+          <a href="https://www.cs.cmu.edu/~abajcsy/">Andrea Bajcsy</a><br>
+			</p>	
+			<div class="paper" id="Jain26weaver">
+				<a href="javascript:toggleblock('Jain26weaverabs')">Abstract</a> /
+				<a href="https://arxiv.org/pdf/2606.13672" target="_blank">Paper</a> /
+        <a href="https://github.com/arnavkj1995/WEAVER" target="_blank">Code</a> /
+				<a href="https://arnavkj1995.github.io/WEAVER/" target="_blank">Website</a>
+				<br>
+				<p align="justify" > <i id="Jain26weaverabs"> The potential impacts of world models (WMs, i.e., learned simulators) on robotics are far-reaching--policy evaluation, policy improvement, and test-time planning--all with limited real-world interaction. To unlock these downstream capabilities, a WM needs to jointly satisfy three desiderata: (i) fidelity (i.e., producing simulated trajectories that correlate with reality), (ii) consistency (i.e., producing simulated trajectories that are coherent over long horizons), and (iii) efficiency (i.e., producing simulated trajectories quickly). We propose \( \texttt{WEAVER} \) (World Estimation Across Views for Embodied Reasoning): a WM architecture that simultaneously achieves all three desiderata, providing state-of-the-art results on robotic manipulation tasks. \( \texttt{WEAVER} \) is a multi-view WM trained to predict future latents and reward values via a flow-matching loss. We distill the key design decisions across model architecture, memory, and prediction objectives required to unlock the kinds of long-horizon dynamic manipulation tasks that have confounded prior world modeling approaches. We apply \( \texttt{WEAVER} \) in robotic hardware, demonstrating its effectiveness at policy evaluation (\( \rho = 0.870 \) correlation with real-world success rate), policy improvement (real-world success rate improvement of 38% on top of the \( \pi_{0.5} \) robot foundation model), and test-time planning (real-world success rate improvement of 14% with a \(5-10\times\) speedup over prior WMs). \( \texttt{WEAVER} \) also demonstrates better performance than prior WMs when evaluated on out-of-distribution scenarios. Code, models, and videos at: <a href="https://arnavkj1995.github.io/WEAVER/" target="_blank">https://arnavkj1995.github.io/WEAVER/</a>. </i></p>
+      </div>
+    </td>
+  </tr>
+
   <tr>
 		<td width="30%" valign="top" align="center"><a href="https://gokul.dev/sailor" target="_blank"><img src="images/Jain25sailor.gif" alt="SAILOR" width="100%" style="border-radius:1px"></a></td>
 		<td width="70%" valign="top">
@@ -583,6 +611,9 @@
 
 <script xml:space="preserve" language="JavaScript">
 hideallbibs();
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('Jain26weaverabs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('Jain25sailorabs');

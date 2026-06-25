@@ -153,7 +153,12 @@
 <table width="100%" align="center">
   <tr>
     <td width="10%">&nbsp;&nbsp;&nbsp;&nbsp; [Jun 26]</td>
-    <td width="90%">Excited to share \( \texttt{WEAVER} \) 🌐: a world model for robot manipulation built around three key desiderata: (i) 🔍 Fidelity, (ii) 🔗 Consistency, and (iii) ⚡ Efficiency; that unlocks multiple downstream applications--policy evaluation, policy improvement, and test-time planning.</td>
+    <td width="90%">Excited to share \( \texttt{WEAVER} \) 🌐: a world model for robot manipulation for effective policy evaluation, policy improvement, and test-time planning.</td>
+  </tr>
+
+  <tr>
+    <td width="10%">&nbsp;&nbsp;&nbsp;&nbsp; [Jun 26]</td>
+    <td width="90%">Excited to share \( \texttt{ARTS} \)--an AI scientist that (i) reasons to guide exploration and (ii) test-time trains to handle long context.</td>
   </tr>
 
   <tr>
@@ -196,7 +201,7 @@
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
   
   <tr>
-		<td width="30%" valign="top" align="center"><a href="https://arnavkj1995.github.io/WEAVER/" target="_blank"><img src="images/Jain26weaver.png" alt="WEAVER" width="100%" style="border-radius:1px"></a></td>
+		<td width="30%" valign="top" align="center"><a href="https://arnavkj1995.github.io/WEAVER/" target="_blank"><video width="100%" style="border-radius:1px" autoplay muted loop playsinline><source src="images/Jain26weaver.mp4" type="video/mp4"></video></a></td>
 		<td width="70%" valign="top">
 			<p>
         <a href="https://arnavkj1995.github.io/WEAVER/" target="_blank" id="WEAVER">
@@ -214,6 +219,29 @@
 				<a href="https://arnavkj1995.github.io/WEAVER/" target="_blank">Website</a>
 				<br>
 				<p align="justify" > <i id="Jain26weaverabs"> The potential impacts of world models (WMs, i.e., learned simulators) on robotics are far-reaching--policy evaluation, policy improvement, and test-time planning--all with limited real-world interaction. To unlock these downstream capabilities, a WM needs to jointly satisfy three desiderata: (i) fidelity (i.e., producing simulated trajectories that correlate with reality), (ii) consistency (i.e., producing simulated trajectories that are coherent over long horizons), and (iii) efficiency (i.e., producing simulated trajectories quickly). We propose \( \texttt{WEAVER} \) (World Estimation Across Views for Embodied Reasoning): a WM architecture that simultaneously achieves all three desiderata, providing state-of-the-art results on robotic manipulation tasks. \( \texttt{WEAVER} \) is a multi-view WM trained to predict future latents and reward values via a flow-matching loss. We distill the key design decisions across model architecture, memory, and prediction objectives required to unlock the kinds of long-horizon dynamic manipulation tasks that have confounded prior world modeling approaches. We apply \( \texttt{WEAVER} \) in robotic hardware, demonstrating its effectiveness at policy evaluation (\( \rho = 0.870 \) correlation with real-world success rate), policy improvement (real-world success rate improvement of 38% on top of the \( \pi_{0.5} \) robot foundation model), and test-time planning (real-world success rate improvement of 14% with a \(5-10\times\) speedup over prior WMs). \( \texttt{WEAVER} \) also demonstrates better performance than prior WMs when evaluated on out-of-distribution scenarios. Code, models, and videos at: <a href="https://arnavkj1995.github.io/WEAVER/" target="_blank">https://arnavkj1995.github.io/WEAVER/</a>. </i></p>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+		<td width="30%" valign="top" align="center"><a href="https://arxiv.org/pdf/2606.21891" target="_blank"><video width="100%" style="border-radius:1px" autoplay muted loop playsinline><source src="images/Jain26arts.mp4" type="video/mp4"></video></a></td>
+		<td width="70%" valign="top">
+			<p>
+        <a href="https://arxiv.org/pdf/2606.21891" target="_blank" id="ARTS">
+				<heading>Learning the \( \texttt{ARTS} \) of Search for Automated Discovery</heading></a><br>
+          <a href="https://gurusha01.github.io/">Gurusha Juneja</a>, 
+          <strong>Arnav Kumar Jain</strong>,
+          <a href="https://dnathani.net/">Deepak Nathani</a>,
+          <a href="https://sites.cs.ucsb.edu/~william/">William Yang Wang</a>,
+          <a href="https://eric-xw.github.io/">Xin Eric Wang</a><br>
+			</p>	
+			<div class="paper" id="Jain26arts">
+				<a href="javascript:toggleblock('Jain26artsabs')">Abstract</a> /
+				<a href="https://arxiv.org/pdf/2606.21891" target="_blank">Paper</a> /
+        <a href="https://github.com/UCSB-AI/arts" target="_blank">Code</a> /
+        <a href="https://automating-discovery.github.io/arts/" target="_blank">Website</a>
+				<br>
+				<p align="justify" > <i id="Jain26artsabs"> Scientific discovery can be formulated as an iterative search process over the space of hypotheses and experiments. Contemporary methods navigate this space using heuristics such as MCTS. These algorithms conflate the merit of a hypothesis with the quality of its experimental execution. A promising hypothesis with preliminary execution is therefore ranked below a modest hypothesis whose execution is refined. Moreover, prior methods prune the search logs as the search progresses because the accumulated history outgrows the context window. We propose Agentic Reasoning for Tree Search (\( \texttt{ARTS} \)), where we deploy a reasoning language model to navigate this space. The model inspects prior execution logs, diagnoses whether earlier failures arose from faulty implementations or bad hypotheses, and selects the hypothesis to build on next. To mitigate challenges with context length, \( \texttt{ARTS} \) uses test-time training to instill the knowledge of search tree in the model weights. Across 22 tasks from MLGym and MLEBench, we show that \( \texttt{ARTS} \) outperforms leading algorithms, with over 15.3% relative improvement in the normalized score. With test-time training we show that a Qwen3-4B agent can match performance with closed-source frontier models like Gemini-3 Pro and GPT o3-reasoning with upto 5x lower inference cost. We further observe that on partially observable RL tasks, the test-time trained Qwen3-4B scientist surpasses \( \texttt{ARTS} \) with the o3 scientist by rediscovering the human-best recurrent-memory solution that heuristic methods prune away. </i></p>
       </div>
     </td>
   </tr>
@@ -614,6 +642,9 @@ hideallbibs();
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('Jain26weaverabs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('Jain26artsabs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('Jain25sailorabs');
